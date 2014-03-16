@@ -5,3 +5,6 @@ CONFIG -= qt
 
 SOURCES += main.cpp
 
+OTHER_FILES += \
+    QtOnUbuntu(6).pdf
+
