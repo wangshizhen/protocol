@@ -1,6 +1,8 @@
 #ifndef TIMEOUT_H
 #define TIMEOUT_H
-
+#ifdef __cplusplus
+  extern "C" {
+#endif
 /*******************************************************************************
 *  FILENAME: timeout.h
 *
@@ -100,7 +102,7 @@ int hm_update(DADDRESS address);
 *return value: 1 if update successfully, 0 otherwise.
 */
 
-int sleep(DADDRESS address, TIME duration);
+int device_sleep(DADDRESS address, TIME duration);
 
 /*
 * check whether there are timeout devices in the hashmap.
@@ -113,7 +115,9 @@ int sleep(DADDRESS address, TIME duration);
 
 int check_timeout();
 
-
+#ifdef __cplusplus
+  }
+#endif
 #endif
 
 

@@ -5,7 +5,9 @@
 * implement hash_map. provide basic functions.
 *
 *******************************************************************************/
-
+#ifdef __cplusplus
+  extern "C" {
+#endif
 /*-----------------------------------------------------------------------------
 		include files
 ------------------------------------------------------------------------------*/
@@ -325,4 +327,6 @@ static DADDRESS hash(DADDRESS key)
 
 	return hash;
 }
-
+#ifdef __cplusplus
+  }
+#endif

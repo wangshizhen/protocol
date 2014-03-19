@@ -81,7 +81,7 @@ int hm_update(DADDRESS address){
     return 1;
 }
 
-int sleep(DADDRESS address, TIME duration){
+int device_sleep(DADDRESS address, TIME duration){
     time_t now, timeout;
     Pair *pair;
     pair = hm_get_fromKey(hashmap, address);
